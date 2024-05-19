@@ -16,14 +16,23 @@ h1{
 .container {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  :root{
+    --primary-color : linear-gradient(to right top, #65dfc9, #6cdbeb);
   
+  }
+
+  .dark-theme{
+
+    --primary-color:#000106;
+    --secondary-color: #fff;
+  }
   .glass {
-    background: white;
+    background: var(--secondary-color);
     position: absolute;
     
     width: 97%;
@@ -53,7 +62,7 @@ h1{
 .circle1,
 .circle2 {
     position: inherit;
-  background: white;
+  background: var(--secondary-color);
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.8),
@@ -195,7 +204,3 @@ input[type=password]:focus{
       display: none;
       }
 
-  
-
-
-  

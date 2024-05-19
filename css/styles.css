@@ -30,7 +30,7 @@
   z-index: 5;
   backdrop-filter: blur(1rem);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   
   margin:4vh 4vh 4vh 4vh;
@@ -207,8 +207,8 @@ footer span{
   display: flex;
   justify-content: space-between;
   align-items:normal;
-
   
+  margin: 20px;
 
 }
 

@@ -7,10 +7,15 @@
 </head>
 <body>
     
+        
+    
     <div class="container">
+        
     <div class="glass">
+        
         <form method="POST" action="verif_connexion.php">
             <h1>AUTHENTIFICATION</h1>
+            
             <input type="text" size="10"  name="login" placeholder="login" ><br>
             <input type="password" size="10" id="pass" name="pass" placeholder="password"><br>
             <div class="password-icon">
@@ -18,7 +23,9 @@
                 <i data-feather="eye-off"></i>
               </div>
             <input type="submit" value="CONNEXION">
+            
         </form>	
+        <img id="icon" src="Accueil/images/moon.png" style="cursor: pointer; width: 25px; height: 25; padding-bottom: 4%;align-items:start; justify-content: space-between;" >
     </div>
     <footer><span>MAHJOUB Jalal & REGUIBI Ali</span></footer>
   </div>
@@ -43,6 +50,17 @@
         });
     </script>
 
-    
+    <script>
+
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if( document.body.classList.contains("dark-theme")){
+                icon.src = "\Accueil\images\crescent-moon.png";
+            }else{
+                icon.src = "Accueil/images/moon.png";
+            }
+        }
+    </script>        
 </body>
 </html>
